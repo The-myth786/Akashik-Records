@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Akashik Records</title>
+  <link rel="stylesheet" href="catalog.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Holtwood+One+SC&family=Jost:ital,wght@0,100..900;1,100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+
+  </head>
+<body>
+
+  <header>
+    <h1 class="logo">AKASHIK RECORDS</h1>
+    <div class="auth-buttons">
+      <button class="login btn">Log in</button>
+      <button class="signup btn">Sign up</button>
+    </div>
+  </header>
+
+  <div class="container">
+    <input class="search-bar" type="text" placeholder="Search for document, subject or university">
+
+    <div class="main">
+      <aside class="sidebar">
+        <div class="filters">
+          <h3>Filter</h3>
+          <p>Education type</p>
+          <button>University</button>
+          <button>High School</button>
+
+          <p>Study material type</p>
+          <button>Assignment</button>
+          <button>Exams</button>
+          <button>Summaries</button>
+          <button>Chapters</button>
+          <button>Notes</button>
+          <button>Others</button>
+
+          <p>Academic year</p>
+          <input type="range" min="2000" max="2025">
+
+          <p>Language</p>
+          <select>
+            <option>All</option>
+            <option>English</option>
+            <option>Hindi</option>
+          </select>
+        </div>
+      </aside>
+
+      <section class="documents">
+        <div class="doc-header">
+          <h3>Documents</h3>
+          <select class="sortby">
+            <option>Popularity</option>
+            <option>Recent</option>
+          </select>
+        </div>
+
+        <div class="doc-list">
+          <!-- Repeat this block for multiple documents -->
+          <div class="doc-item">
+            <div class="doc-info">
+              <span>Programming with C.pdf</span>
+              <span>Data structures</span>
+            </div>
+            <div class="doc-actions">
+              <span class="doc-tag">Notes</span>
+              <button class="download">⭳</button>
+            </div>
+          </div>
+          <!-- End block -->
+
+          <!-- Add more .doc-item blocks here if needed -->
+        </div>
+
+        <button style="margin-top: 20px; padding: 10px 20px; border: none; border-radius: 8px; background: #d1eaff; font-weight: 600;">See more</button>
+      </section>
+    </div>
+  </div>
+
+  <footer>
+    <p>For students • Search study materials • Rewards store • Community • Guidelines</p>
+    <p>Terms of Use • Privacy policy • About Us • Imprints</p>
+    <p>Copyright © Akashik Records GMV 2025 - 2026</p>
+  </footer>
+
+  
+
+</body>
+</html>

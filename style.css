@@ -1,0 +1,498 @@
+/* Reset some basic styles */
+body, h1, h2, h3, p, div {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'jost';
+}
+
+/* Header Styles */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: white;
+  color: black;
+}
+
+/* Logo Style */
+.logo {
+  font-size: 30pt;
+  font-weight: bold;
+}
+
+/* Button Container */
+.log {
+  display: flex;
+  gap: 15px;
+}
+
+/* Button Styles */
+.btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.login {
+  background-color: transparent;
+  color: black;
+  font-size: 15pt;
+  font-weight:bold ;
+  font-family: 'jost';
+}
+
+.signup {
+  background-color: #05EFAB;
+  color: white;
+  border: none;
+  font-size: 14pt;
+  font-weight: bold;
+  font-family: 'jost';
+}
+
+.login:hover {
+  background-color: white;
+  color: #1e1e2f;
+}
+
+.signup:hover {
+  background-color: #009acb;
+}
+
+
+
+.hero {
+  height: 632px;
+  width: 100%;
+  background: url('assests/bg\ des.svg') center/cover no-repeat;
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.overlay{
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 672px;
+  background:#c2e8ddad 
+}
+
+.hero-content {
+  position: relative;
+  max-width: 1045px;
+}
+
+.hero h1 {
+  font-size: 40pt;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 20pt;
+  margin-bottom: 30px;
+}
+
+.search-bar {
+  position: relative;
+  width: 100%;
+  max-width: 812px;
+  margin: 0 auto;
+}
+
+.search-bar i {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  color: #888;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 12px 15px 12px 40px; /* left padding for icon space */
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  background-color: #fff;
+  color: #333;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: 0.3s ease;
+}
+
+.search-bar input:focus {
+  outline: none;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+}
+
+.hero-icon{
+  display: flex;
+  position: relative;
+  height: 144px;
+  width: 812px;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.ic{
+  display: flex;
+  position: relative;
+  height: 144px;
+  width: 144px;
+  background-color: black;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.fa-graduation-cap {
+  position: absolute;
+  margin-top: 35px;
+  transform: translateY(-50%);
+  color: white;
+  font-size : 50px;
+}
+
+.fa-file-lines{
+  position: absolute;
+  margin-top:40px;
+  transform: translateY(-50%);
+  color: white;
+  font-size : 50px;
+}
+
+.fa-comments{
+  position: absolute;
+  margin-top:40px;
+  transform: translateY(-50%);
+  color: white;
+  font-size : 50px;
+}
+
+.home1{
+  position: relative;
+  height: 632px;
+  max-width: 1440px;
+  background: url('assests/bg\ des.svg') center/cover no-repeat;
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.overlay2{
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 672px;
+  background:#f2fdb9af;
+  z-index: 1;
+}
+
+.home-content{
+  position: relative;
+  max-width: 1045px;
+  z-index: 2;
+}
+
+.home1 h1{
+  font-size: 50pt;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.home-block{
+  display: flex;
+  position: absolute;
+  top: 250px;
+  left: -200px;
+  height: 274px;
+  width: 707px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.897);
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: left;
+}
+.home-block p{
+  font-size: 20pt;
+  margin-left: 120px;
+}
+
+.signup1{
+  height: 52px;
+  width: 172px;
+  position: absolute;
+  background-color: #05EFAB;
+  color: white;
+  border: none;
+  font-size: 14pt;
+  font-weight: bold;
+  font-family: 'jost';
+  top: 540px;
+  left: -200px;
+}
+
+.home-block i{
+  position: absolute;
+  font-size: 20pt;
+  color: #818181;
+  margin-left: 50px;
+}
+
+.fa-book-open{
+ margin-bottom: 180px;
+}
+
+.fa-gift{
+  margin-top: 180px;
+}
+
+.home2{
+  position: relative;
+  height: 632px;
+  background: url('assests/bg\ des.svg') center/cover no-repeat;
+  color: rgb(0, 0, 0);
+  display: flex;
+  padding: 20px;
+}
+
+.overlay3{
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 672px;
+  background:#ffc9c9d7;
+  z-index: 1;
+}
+
+.home2-content{
+  position: relative;
+  max-width: 1045px;
+  z-index: 2;
+}
+
+.home2 h1{
+ font-size: 50pt;
+}
+
+.home2 p{
+ font-size: 18pt;
+}
+
+.content-home2{
+ position: absolute;
+ width: 561px;
+ margin-top: 60px;
+ margin-left: 80px;
+}
+
+.studyimg{
+  position:absolute;
+  height: 560px;
+  width: 490px;
+  margin-left: 950px;
+}
+
+.foot-content{
+  margin-top: 20px;
+  margin-left: 50px;
+}
+
+.last{
+  display: flex;
+}
+
+.terms{
+  position:relative;
+  width: 412px;
+  display: flex;
+  justify-content: space-around;
+  margin-left: 50px; 
+}
+
+.Copyright{
+  margin-left: 720px;
+}
+
+/*LOGIN PAGE*/
+
+/* Overlay Modal */
+.modal {
+  display: none;
+  position:fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 30px;
+  margin-left: 350px;
+  border-radius: 20px;
+  width: 320px;
+  position: relative;
+  color: black;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.862);
+  font-family: 'jost';
+}
+
+.left{
+  margin-left: 200px;
+}
+
+.left h1{
+  color: white;
+  font-size: 5rem;
+}
+
+.login-txt{
+  text-align: center;
+}
+
+.with-text{
+  text-align: center;
+}
+
+.or{
+  text-align: center;
+}
+
+#close-login {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Social Buttons */
+.social-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.social-buttons button {
+  width: 32%;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.social-buttons .google img {
+  width: 22px;
+}
+
+.social-buttons .facebook {
+  background-color: #1877f2;
+  color: #fff;
+}
+
+.social-buttons .apple {
+  background-color: #000;
+  color: #fff;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+form input {
+  padding: 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 10px;
+  background-color: #f2f2f2;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+.options a {
+  text-decoration: none;
+  color: #1877f2;
+}
+
+.login-btn {
+  margin-top: 20px;
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  background-color: #1877f2;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.register {
+  font-size: 13px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.register a {
+  color: #1877f2;
+  text-decoration: none;
+}
+
+.left-signup{
+ padding: 0;
+ margin-left: 80px;
+}
+
+.left-signup h1{
+  font-size: 4.5rem;
+  color: white;
+  text-align: center;
+}
+
+.left-signup p{
+  color: white;
+  font-size: 40px;
+  text-align: center;
+}
+
+#signup-modal>.modal-content{
+  margin-right: 50px;
+  width: 400px;
+  margin-left: 0;
+}
+
+#close-signup{
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}

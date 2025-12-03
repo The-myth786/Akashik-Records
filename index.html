@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Akashik records</title>
+  <!-- You can also link stylesheets or icons here -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Holtwood+One+SC&family=Jost:ital,wght@0,100..900;1,100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+<header class="site-header "> 
+     <h1 class="logo">AKASHIK RECORDS</h1>
+     <div class="log">
+       <button id="open-login" class="btn login">Log in</button>
+       <button id="open-signup" class="btn signup signup-btn-trigger button">Sign up</button>
+     </div>  
+</header>
+ <div class="overlay"></div>
+ <section class="hero">
+    <div class="hero-content">
+      <h1>Free study notes, summaries &<br> answers for your studies</h1>
+      <p>Study easier, faster & better.</p>
+      <div class="search-bar">
+       <i class="fas fa-search"></i>
+       <input type="text" placeholder="Search for notes, books, etc..." />
+      </div> 
+       <div class="hero-icon">
+         <div class="ic circle1">
+          <i class="fa-solid fa-graduation-cap"></i>
+         </div>
+         <div class="ic circle2">
+         <i class="fa-regular fa-file-lines"></i>
+          </div>
+         <div class="ic circle3">
+          <i class="fa-solid fa-comments"></i>
+         </div>
+       </div>
+    </div>
+  </section>
+  <div class="overlay2"></div>
+  <section class="home1">
+    <div class="home-content">
+      <h1>studying has never been easier</h1>
+      <div class="home-block">
+        <p>find all relevent study materials for your module</p>
+        <i class="fa-solid fa-book-open"></i>
+        <p>find answers to your questions in our community</p>
+        <i class="fa-solid fa-user-group"></i>
+        <p>share your study materials and recieve rewards</p>
+        <i class="fa-solid fa-gift"></i>
+      </div>
+      <button class="btn signup1 signup-btn-trigger button">Sign up for free</button>
+    </div>
+  </section>
+  <div class="overlay3"></div>
+  <section class="home2">
+    <div class="home2-content">
+      <div class="content-home2">
+       <h1>Add your modules and ace every lecture, seminar and test.</h1>
+       <p>We connect students and encourages them to help each other. Together we master every exam and every assignment.</p>
+      </div>
+      <img class="studyimg" src="assests/study.svg">
+    </div>
+  </section>
+  <footer class="site-footer">
+    <div class="foot-content">
+     <p>for students</p>
+      <ul>
+       <li>search study materials</li>
+       <li>Reward store</li>
+       <li>Community Guidelines</li>
+      </ul>
+    </div>
+    <div class="last">
+      <div class="terms">
+       <p>Terms of use</p>
+       <p>Privacy policy</p>
+       <p>About us</p>
+       <p>Imprints</p>
+      </div>
+      <div class="Copyright">
+       <p>Copyright © Akashik Recrds GMV 2025 - 2026</p>
+      </div>
+    </div>
+  </footer>
+
+<div id="login-modal" class="modal">
+  <div class="left">
+    <h1>Welcome Back!</h1>
+  </div>
+  <div class="modal-content">
+    <span id="close-login">&times;</span>
+    <h2 class="login-txt">Log in</h2>
+    <p class="with-text">with</p>
+    <div class="social-buttons">
+      <button class="google"><img src="https://img.icons8.com/color/48/google-logo.png" alt="Google" /></button>
+      <button class="facebook"><i class="fab fa-facebook-f"></i></button>
+      <button class="apple"><i class="fab fa-apple"></i></button>
+    </div>
+    <p class="or">or</p>
+
+    <form>
+      <label>Email address</label>
+      <input type="email" placeholder="Enter Email address" required />
+
+      <label>Password</label>
+      <input type="password" placeholder="Enter Password" required />
+
+      <div class="options">
+        <label><input type="checkbox" /> Stay logged in</label>
+        <a href="#">Forgot password?</a>
+      </div>
+
+      <button class="login-btn">Log in</button>
+      <p class="register">No account? <a href="#" id="switch-to-signup">Register for free</a></p>
+
+    </form>
+  </div>
+</div>
+
+<!-- Sign Up Modal -->
+<div id="signup-modal" class="modal">
+  <div class="left-signup">
+    <h1>Study easier together</h1>
+    <p>Get access to all documents, groups, questions and answers.</p>
+  </div>
+  <div class="modal-content">
+    <span id="close-signup">&times;</span>
+    <h2 style="text-align:center">Sign up</h2>
+    <p class="with-text" style="text-align:center">with</p>
+    <div class="social-buttons">
+      <button class="google"><img src="https://img.icons8.com/color/48/google-logo.png" alt="Google" /></button>
+      <button class="facebook"><i class="fab fa-facebook-f"></i></button>
+      <button class="apple"><i class="fab fa-apple"></i></button>
+    </div>
+    <p class="or" style="text-align:center">or</p>
+
+    <form>
+      <label>Full Name</label>
+      <input type="text" placeholder="Enter Full Name" required />
+
+      <label>Email Address</label>
+      <input type="email" placeholder="Enter Email" required />
+
+      <label>Create Password</label>
+      <input type="password" placeholder="Enter Password" required />
+
+      <label>Confirm Password</label>
+      <input type="password" placeholder="Confirm Password" required />
+
+      <div class="options">
+        <label><input type="checkbox" required /> I agree to terms</label>
+      </div>
+
+      <button class="login-btn">Create Account</button>
+        <p class="register">Already have an account? <a href="#" id="switch-to-login">Log in</a></p>
+    </form>
+  </div>
+</div>
+
+
+ <script>
+    // Login modal
+    const loginModal = document.getElementById('login-modal');
+    const openLogin = document.getElementById('open-login');
+    const closeLogin = document.getElementById('close-login');
+
+    openLogin.onclick = () => loginModal.style.display = 'flex';
+    closeLogin.onclick = () => loginModal.style.display = 'none';
+
+    // Signup modal
+    const signupModal = document.getElementById('signup-modal');
+    const signupButtons = document.querySelectorAll('.signup-btn-trigger');
+    const closeSignup = document.getElementById('close-signup');
+
+    signupButtons.forEach(btn => {
+      btn.onclick = () => signupModal.style.display = 'flex';
+    });
+
+    closeSignup.onclick = () => signupModal.style.display = 'none';
+
+    // Switch from login to signup
+    const switchToSignup = document.getElementById('switch-to-signup');
+    switchToSignup.onclick = (e) => {
+      e.preventDefault();
+      loginModal.style.display = 'none';
+      signupModal.style.display = 'flex';
+    };
+
+    // Switch from signup to login
+    const switchToLogin = document.getElementById('switch-to-login');
+    switchToLogin.onclick = (e) => {
+      e.preventDefault();
+      signupModal.style.display = 'none';
+      loginModal.style.display = 'flex';
+    };
+
+    // Close modals when clicking outside
+    window.onclick = (e) => {
+      if (e.target === loginModal) loginModal.style.display = 'none';
+      if (e.target === signupModal) signupModal.style.display = 'none';
+    };
+  </script>
+
+</body>
+</html>
